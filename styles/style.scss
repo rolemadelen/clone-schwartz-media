@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Libre Franklin", Helvetica, Arial, serif;
+}
+/************
+* HEADER
+************/
+header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1em 0 0 0;
+    background-color: white;
+}
+
+button.nav-button {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    margin: 20px 0 0 20px;
+}
+
+header a.logo img {
+    padding-left: 4.5em;
+}
+
+header a.logo-media img {
+    padding-right: 3em;
+}
+
+header a img {
+    width: 167px;
+    height: 55px;
+}
+
+/***********************
+* Main layout - image/text
+************************/
+div#main {
+    margin: 7em auto;
+    width: 65%;
+}
+
+div#main img {
+    height: 70vh;
+    width: auto;
+    margin: 0 auto;
+}
+
+div#main div p {
+    width: 300px;
+    margin: 40px auto;
+    padding-left: 10px;
+    text-align: center;
+}
+
+div#main div button {
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+}
+
+#main div p {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/**************
+* SECTION
+***************/
+section {
+    padding: 0 9em 0 10em;
+}
+
+section div#about p:before {
+    content: "About";
+    padding-right: 3em;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+section div#about p {
+    margin-bottom: 1.0em;
+    font-weight: 400;
+    font-size: 28px;
+    color: rgba(33, 31, 31, 1.0);
+    letter-spacing: -0.5px;
+    line-height: 40px;
+}
+
+section div#about div {
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+section div#about div span:nth-child(2) {
+    transition: all .3s ease;
+}
+section div#about div span:nth-child(2):hover {
+    padding-left: 5px;
+    transition: 0.3s ease;
+}

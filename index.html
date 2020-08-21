@@ -4,10 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schwartz Media | Schwartz Media</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    Schwartz Media
+    <header class="sticky-header">
+        <button class="nav-button hamburger">H</button>
+        <a class="logo" href="#"><img src="./assets/images/logo.png" alt="Logo image" /></a>
+        <a class="logo-media" href="#"><img src="./assets/images/logo-media.png" alt="Media image" /></a>
+    </header>
+
+    <!-- left side menu -->
+    <nav></nav>
+
+    <!-- main content -->
+    <div id="main">
+        <img id="image-slideshow" src="./assets/images/carousel_tm_1.JPG" alt="slideshow images">
+        <div>
+            <p>        
+                News that lasts.
+            </p>
+            <button type="button">to About</button>
+        </div>
+    </div>
+    
+    <section>
+        <div id="about">
+            <p>
+                Schwartz Media publishes intelligent news and current affairs that breaks the 24-hour news cycle. We offer a nuanced examination of Australia and the world, focused on fresh insight and literary expression. Our audience reads to know, not just to agree. We invest in long-form journalism where the issues demand it, providing writing of a quality that makes difficult topics clear. Schwartz Media publishes Australia’s most respected writers across The Saturday Paper, The Monthly magazine and the daily podcast 7am, alongside our sister publications, Quarterly Essay and Australian Foreign Affairs.
+            </p>
+            <div>
+                <span>O</span>
+                <span>View our Companies</span>
+            </div>
+        </div>
+    </section>
+    
+    <hr>
+
+    <section>
+        <div><h2>Journalism</h2></div>
+        <div><h2>The Monthly</h2></div>
+        <div><h2>The Saturday Paper</h2></div>
+        <div><h2>7am</h2></div>
+        <div>
+            <div><h2>Quarterly Essay</h2></div>
+            <div><h2>Australian Foreign Affairs</h2></div>
+        </div>
+        <div><h2>Advertise</h2></div>
+        <div>
+            <div><h2>Shop</h2></div>
+            <div><h2>A Wine Service</h2></div>
+        </div>
+        <div>
+            <div><h2>Careers</h2></div>
+            <div><h2>News</h2></div>
+            <div><h2>Contact</h2></div>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
 </body>
 <script src="./src/dist/app.js"></script>
 </html>
