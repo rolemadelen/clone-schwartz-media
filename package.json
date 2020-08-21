@@ -1,0 +1,25 @@
+{
+  "name": "01-schwartz-media",
+  "version": "1.0.0",
+  "description": "Clone Coding - HTML/CSS + Vanila JS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack",
+    "build": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jioneeu/clone-schwartz-media.git"
+  },
+  "author": "Jione Eu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jioneeu/clone-schwartz-media/issues"
+  },
+  "homepage": "https://github.com/jioneeu/clone-schwartz-media#readme",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
