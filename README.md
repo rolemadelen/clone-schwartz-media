@@ -1,2 +1,16 @@
-# clone-schwartz-media
+# Schwartz Media Clone [![Netlify Status](https://api.netlify.com/api/v1/badges/b0666ae6-9488-46d1-be55-d078890c246f/deploy-status)](https://app.netlify.com/sites/awesome-ptolemy-e297f1/deploys)
 Clone Coding - HTML/CSS + Vanila JS
+
+[https://schwartzmedia.com.au](https://schwartzmedia.com.au)
+
+## Built With
+  - HTML/CSS 
+  - Vanilla JavaScript
+  - SASS (basic)
+  - npm
+  - webpack, webpack-dev-server)
+  - VS Code
+  - MacOS (Safari/Chrome)
+
+## Live Demo
+i.p.
