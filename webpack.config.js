@@ -5,7 +5,7 @@ module.exports = {
     mode: 'development',
     devtool: 'eval',
     resolve: {
-        extensions: ['.js', '.css', '.scss'],
+        extensions: ['.js'],
     },
 
     entry: {
@@ -19,13 +19,14 @@ module.exports = {
             },
             {
                 test: /\.s[ac]ss$/i,
-                use: [],
+                use: ['style-loader', 'css-loader', 'sass-loader']
+
             }
      ]
     },
     output: {
         path: path.join(__dirname, 'src/dist'),
         filename: '[name].js',
-        publicPath: './src/dist/'
+        publicPath: '/src/dist/'
     }
 }
