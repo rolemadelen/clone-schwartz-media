@@ -13,4 +13,4 @@ Clone Coding - HTML/CSS + Vanila JS
   - MacOS (Safari/Chrome)
 
 ## Live Demo
-i.p.
+[Netlify](https://awesome-ptolemy-e297f1.netlify.app) 
