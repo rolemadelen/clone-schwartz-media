@@ -1,21 +1,31 @@
 import '../styles/style.scss';
 'use strict';
 
-const imgSlideshow =  document.querySelector('img#image-slideshow');
-const images = ['carousel_tm_1.jpg', 'carousel_tm_2.jpg', 'carousel_tm_3.jpg']
-const imgPath = "./assets/images/";
-let imgPosition = 0;
+const image1 =  document.querySelector('img#image1');
+const image2 =  document.querySelector('img#image2');
+const image3 =  document.querySelector('img#image3');
+
+let imgPosition = 1;
 
 function imageSlideshow() {
     setInterval(() => {
-        if (imgPosition >= images.length) {
+        if (imgPosition >= 3) {
             imgPosition = 0;
         }
     
-        imgSlideshow.src = imgPath + images[imgPosition];
+        if (imgPosition === 0) {
+            image1.className = '';
+            image3.className = 'hidden';
+        } else if (imgPosition === 1) {
+            image2.className = '';
+            image1.className = 'hidden';
+        } else {
+            image3.className = '';
+            image2.className = 'hidden';
+        }
         ++imgPosition;
         console.log(imgPosition);
     }, 3500);
 }
 
-// document.onload = imageSlideshow();
+ document.onload = imageSlideshow();
