@@ -5,6 +5,7 @@
 
 body {
     font-family: "Libre Franklin", Helvetica, Arial, serif;
+    color: #212020;
 }
 /************
 * HEADER
@@ -25,15 +26,15 @@ button.nav-button {
     left: 0;
     width: 30px;
     height: 30px;
-    margin: 20px 0 0 20px;
+    margin: 20px 0 0 30px;
 }
 
 header a.logo img {
-    padding-left: 4.5em;
+    padding-left: 5.5em;
 }
 
 header a.logo-media img {
-    padding-right: 3em;
+    padding-right: 4.5em;
 }
 
 header a img {
@@ -46,7 +47,7 @@ header a img {
 ************************/
 div#main {
     margin: 7em auto;
-    width: 65%;
+    width: 75%;
 }
 
 div#main img {
@@ -57,27 +58,25 @@ div#main img {
 
 div#main div p {
     width: 300px;
-    margin: 40px auto;
+    margin: 90px auto;
+    margin-bottom: 0px;
     padding-left: 10px;
+    font-size: 30px;
+    font-weight: 500;
     text-align: center;
 }
 
 div#main div button {
     position: absolute;
     right: 60px;
-    bottom: 60px;
-}
-
-#main div p {
-    font-size: 28px;
-    font-weight: 500;
+    bottom: 50px;
 }
 
 /**************
 * SECTION
 ***************/
 section {
-    padding: 0 9em 0 10em;
+    padding: 0 7em 0 6em;
 }
 
 section div#about p:before {
@@ -85,10 +84,11 @@ section div#about p:before {
     padding-right: 3em;
     font-size: 20px;
     letter-spacing: 0;
+    font-weight: 500;
 }
 
 section div#about p {
-    margin-bottom: 1.0em;
+    margin-bottom: 0.8em;
     font-weight: 400;
     font-size: 28px;
     color: rgba(33, 31, 31, 1.0);
@@ -97,15 +97,21 @@ section div#about p {
 }
 
 section div#about div {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     cursor: pointer;
 }
 
 section div#about div span:nth-child(2) {
+    letter-spacing: 0px;
     transition: all .3s ease;
 }
 section div#about div span:nth-child(2):hover {
     padding-left: 5px;
+    letter-spacing: 0.7px;
     transition: 0.3s ease;
+}
+
+section div#about {
+    margin-bottom: 10em;
 }
