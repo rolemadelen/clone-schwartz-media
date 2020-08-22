@@ -24,7 +24,6 @@ function imageSlideshow() {
             image2.className = 'hidden';
         }
         ++imgPosition;
-        console.log(imgPosition);
     }, 3500);
 }
 
