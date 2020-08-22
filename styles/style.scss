@@ -1,46 +1,43 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+@use 'base';
+@use 'mixins';
 
-body {
-    font-family: "Libre Franklin", Helvetica, Arial, serif;
-    color: #212020;
-}
 /************
 * HEADER
 ************/
 header {
     position: fixed;
-    display: flex;
     top: 0;
-    width: 100%;
-    justify-content: space-between;
-    padding: 1em 0 0 0;
-    background-color: white;
-    z-index: 999;
-}
 
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+    padding: 1em 0 0 0;
+    background-color: base.$color-white;
+    z-index: 999;
+    
+    .logo img {
+        padding-left: 5.5em;
+    }
+    
+    a.logo-media img {
+        padding-right: 4.5em;
+    }
+    
+    a img {
+        width: 167px;
+        height: 55px;
+    }
+}
+    
 button.nav-button {
     position: fixed;
     top: 0;
     left: 0;
+
     width: 30px;
     height: 30px;
     margin: 20px 0 0 30px;
-}
-
-header a.logo img {
-    padding-left: 5.5em;
-}
-
-header a.logo-media img {
-    padding-right: 4.5em;
-}
-
-header a img {
-    width: 167px;
-    height: 55px;
 }
 
 /***********************
@@ -49,78 +46,73 @@ header a img {
 div#main {
     margin: 7em auto;
     text-align: center;
-}
-
-div#main img {
-    height: 70vh;
-    margin: 0 auto;
-    opacity: 1;
-    transition: opacity 0.9s ease-in-out;
-    z-index: -1;
-}
-
-div#main div p {
-    width: 300px;
-    margin: 90px auto;
-    margin-bottom: 0px;
-    font-size: 30px;
-    font-weight: 500;
-}
-
-div#main div button {
-    position: absolute;
-    right: 60px;
-    bottom: 50px;
-}
-
-div#main img.hidden {
-    opacity: 0;
-    margin: 0;
-    padding: 0;
-    height: 0;
-    width: 0;
+    
+    img {
+        height: 70vh;
+        margin: 0 auto;
+        opacity: 1;
+        transition: opacity 0.9s ease-in-out;
+        z-index: -1;
+    }
+    
+    div p {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 90px;
+        @include mixins.font-ws(500, 30px);
+    }
+    
+    div button {
+        position: absolute;
+        right: 60px;
+        bottom: 50px;
+    }
+    
+    img.hidden {
+        opacity: 0;
+        margin: 0;
+        padding: 0;
+        height: 0;
+        width: 0;
+    }
 }
 
 /**************
-* SECTION
+* SECTION - About
 ***************/
 section {
     padding: 0 7em 0 6em;
-}
-
-section div#about p:before {
-    content: "About";
-    padding-right: 3em;
-    font-size: 20px;
-    letter-spacing: 0;
-    font-weight: 500;
-}
-
-section div#about p {
-    margin-bottom: 0.8em;
-    font-weight: 400;
-    font-size: 28px;
-    color: rgba(33, 31, 31, 1.0);
-    letter-spacing: -0.5px;
-    line-height: 40px;
-}
-
-section div#about div {
-    font-size: 22px;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-section div#about div span:nth-child(2) {
-    letter-spacing: 0px;
-    transition: all .3s ease;
-}
-section div#about div span:nth-child(2):hover {
-    padding-left: 5px;
-    letter-spacing: 0.7px;
-    transition: 0.3s ease;
-}
-
-section div#about {
     margin-bottom: 10em;
+
+    div#about {
+        p:before {
+            content: "About";
+            padding-right: 3em;
+            @include mixins.font-ws(500, 20px);
+            letter-spacing: 0;
+        }
+        
+        p {
+            margin-bottom: 0.8em;
+            @include mixins.font-ws(400, 28px);
+            color: base.$color-text;
+            letter-spacing: -0.5px;
+            line-height: 40px;
+        }
+        
+        div {
+            @include mixins.font-ws(500, 22px);
+            cursor: pointer;
+            
+            span:nth-child(2) {
+                letter-spacing: 0px;
+                transition: all .3s ease;
+            }
+            span:nth-child(2):hover {
+                padding-left: 7px;
+                letter-spacing: 0.5px;
+                transition: 0.3s ease;
+            }
+        }            
+    }
 }
