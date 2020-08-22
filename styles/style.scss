@@ -211,8 +211,7 @@ footer {
     color: base.$color-white;
     @include mixins.font-ws(200, 14px);
 
-    padding: 1.7em 0 0 14em;
-    height: 30vh;
+    padding: 1.7em 0 2em 14em;
 
     display: flex;
     justify-content: space-between;
