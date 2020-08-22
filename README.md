@@ -13,4 +13,4 @@ Clone Coding - HTML/CSS + Vanila JS
   - MacOS (Safari/Chrome)
 
 ## Live Demo
-[Netlify](https://clone-schwartz-media.netlify.app) 
+[Netlify](https://clone-schwartz-media.netlify.app) (in progress)
