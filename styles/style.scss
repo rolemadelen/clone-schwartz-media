@@ -10,26 +10,26 @@ header {
 
     display: flex;
     justify-content: space-between;
-    
+
     width: 100%;
     padding: 1em 0 0 0;
     background-color: base.$color-white;
     z-index: 999;
-    
+
     .logo img {
         padding-left: 5.5em;
     }
-    
+
     a.logo-media img {
         padding-right: 4.5em;
     }
-    
+
     a img {
         width: 167px;
         height: 55px;
     }
 }
-    
+
 button.nav-button {
     position: fixed;
     top: 0;
@@ -46,14 +46,14 @@ button.nav-button {
 div#main {
     margin: 7em auto;
     text-align: center;
-    
+
     div p {
         width: 300px;
         margin: 0 auto;
         margin-top: 90px;
         @include mixins.font-ws(500, 32px);
     }
-    
+
     div button {
         position: absolute;
         right: 60px;
@@ -67,7 +67,7 @@ div#main {
         transition: opacity 0.9s ease-in-out;
         z-index: -1;
     }
-    
+
     img.hidden {
         opacity: 0;
         margin: 0;
@@ -91,7 +91,7 @@ section {
             @include mixins.font-ws(500, 20px);
             letter-spacing: 0;
         }
-        
+
         p {
             margin-bottom: 0.8em;
             @include mixins.font-ws(400, 30px);
@@ -99,21 +99,22 @@ section {
             letter-spacing: -0.5px;
             line-height: 40px;
         }
-        
+
         div {
             @include mixins.font-ws(500, 22px);
             cursor: pointer;
-            
+
             span:nth-child(2) {
                 letter-spacing: 0px;
                 transition: all .3s ease;
             }
+
             span:nth-child(2):hover {
                 padding-left: 7px;
                 letter-spacing: 0.5px;
                 transition: 0.3s ease;
             }
-        }            
+        }
     }
 
     button.round-button {
@@ -152,31 +153,34 @@ section#summary {
     div.row-reverse {
         flex-direction: row-reverse;
 
-        img {
+        div:nth-child(2) {
             margin-right: 2em;
         }
     }
 
     div.container {
+        position: relative;
         padding-top: 1em;
         padding-bottom: 1em;
 
         display: flex;
-        justify-content: space-between;
 
-        img {
-            width: 500px;
-            height: 330px;
-            padding: 0.7em;
+        div {
+            flex-grow: 0;
+            flex-basis: 50%;
         }
 
+        img {
+            width: 100%;
+            height: auto;
+        }
 
         div h2 {
             margin-bottom: 36px;
         }
 
         div p {
-            margin-bottom: 1.5em;
+            margin: 1em 0;
             line-height: 44px;
             @include mixins.font-ws(300, 34px);
         }
@@ -187,17 +191,11 @@ section#summary {
         }
 
         div.container-2 {
+            flex-basis: auto;
             display: flex;
 
-            img {
-                width: 510px;
-            }
-            div:nth-child(2){
+            div:nth-child(2) {
                 padding-left: 2em;
-            }
-
-            p {
-                padding: 0 1em 0 1em;
             }
         }
     }
@@ -221,12 +219,13 @@ footer {
             margin-bottom: 7em;
         }
 
-        a, div {
+        a,
+        div {
             line-height: 1.5;
             text-decoration: none;
             color: base.$color-white;
         }
-        
+
         div a:hover {
             border-bottom: 1px solid base.$color-white;
         }
@@ -238,13 +237,14 @@ footer {
 
     div.footer-right {
         display: flex;
-        
+
         a {
             height: 2vh;
             color: base.$color-white;
             text-decoration: none;
             margin: 0 4em;
         }
+
         a:hover {
             border-bottom: 1px solid base.$color-white;
         }
