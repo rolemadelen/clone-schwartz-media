@@ -27,4 +27,17 @@ function imageSlideshow() {
     }, 3500);
 }
 
- document.onload = imageSlideshow();
+document.onload = imageSlideshow();
+
+// Change the header style on scroll
+window.onscroll = function() { scrollFunction(); }
+
+const header = document.getElementById('header');
+
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50 ) {
+        header.classList.add('sticky-header');
+    } else {
+        header.classList.remove('sticky-header');
+    }
+}
