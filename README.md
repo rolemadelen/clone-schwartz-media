@@ -1,4 +1,4 @@
-# Schwartz Media Clone [![Netlify Status][![Netlify Status](https://api.netlify.com/api/v1/badges/b0666ae6-9488-46d1-be55-d078890c246f/deploy-status)](https://app.netlify.com/sites/clone-schwartz-media/deploys)
+# Schwartz Media Clone [![Netlify Status](https://api.netlify.com/api/v1/badges/b0666ae6-9488-46d1-be55-d078890c246f/deploy-status)](https://app.netlify.com/sites/clone-schwartz-media/deploys)
 
 Clone Coding - HTML/CSS + Vanila JS
 
