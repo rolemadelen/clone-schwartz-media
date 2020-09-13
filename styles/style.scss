@@ -14,7 +14,7 @@
     width: 100%;
     padding: 1em 0 0 0;
     background-color: base.$color-white;
-    z-index: 999;
+    z-index: 990;
 
     .logo img {
         padding-left: 5.5em;
@@ -42,7 +42,7 @@
     }
     
     a.logo {
-        z-index: 998;
+        z-index: 992;
     }
 
     a.logo-media img {
@@ -59,6 +59,28 @@ button.nav-button {
     width: 30px;
     height: 30px;
     margin: 20px 0 0 30px;
+}
+
+/************
+* SIDE BAR
+************/
+
+nav #sidebar {
+    position: fixed;
+    background: black;
+    width: 0px;
+    height: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+#main, 
+section {
+    transition: margin-left .5s;
+    padding: 20px;
 }
 
 /***********************
