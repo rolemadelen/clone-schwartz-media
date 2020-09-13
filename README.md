@@ -2,6 +2,8 @@
 
 Clone Coding - HTML/CSS + Vanila JS
 
+![Original Page](./assets/original-page.png)
+
 [https://schwartzmedia.com.au](https://schwartzmedia.com.au)
 
 ## Built With
